@@ -17,27 +17,27 @@ public class Natacion {
         
         // Añadir porcentajes
         while(p1+p2+p3+p4+p5!=1){
-            System.out.println("Prueba 1: ");
+            System.out.println("Añadir porcentaje Prueba 1: ");
             p1=teclado.nextDouble();
-            System.out.println("Prueba 2: ");
+            System.out.println("Añadir porcentaje Prueba 2: ");
             p2=teclado.nextDouble();
-            System.out.println("Prueba 3: ");
+            System.out.println("Añadir porcentaje Prueba 3: ");
             p3=teclado.nextDouble();
-            System.out.println("Prueba 4: ");
+            System.out.println("Añadir porcentaje Prueba 4: ");
             p4=teclado.nextDouble();
-            System.out.println("Prueba 5: ");
+            System.out.println("Añadir porcentaje Prueba 5: ");
             p5=teclado.nextDouble();
         }
         int i;
         boolean puntua = true;
         float[] lista = new float[5];
         // Puntua las pruebas del 1 al 10, si no participa en alguna puntuale con un 0
-        System.out.println("Puntuación");
+        System.out.println("LA PUNTUACIÓN");
         for (i = 0; i < 5; i++) {
-            System.out.println("Ppuntuación prueba " + (i + 1) + ": ");
+            System.out.println("La Puntuación de la prueba es " + (i + 1) + ": ");
             float puntuacion = teclado.nextFloat();
             while (puntuacion < 0 || puntuacion > 10) {
-                System.out.println("Puntuación prueba " + (i + 1) + ": ");
+                System.out.println("La Puntuación de la prueba es " + (i + 1) + ": ");
                 puntuacion = teclado.nextFloat();
             
             lista[i] = puntuacion;
@@ -67,7 +67,7 @@ public class Natacion {
             if (puntua == true) {
             System.out.println(media);
         } else {
-            System.out.println("Faltan pruebas por puntuar");
+            System.out.println("No están todas las pruebas, Faltan pruebas por puntuar");
         }
 
     }
